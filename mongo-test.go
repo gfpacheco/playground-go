@@ -23,7 +23,7 @@ func main() {
     // Optional. Switch the session to a monotonic behavior.
     session.SetMode(mgo.Monotonic, true)
 
-    beers := session.DB("workshop-floripa").C("beers")
+    beers := session.DB("brewery").C("beers")
 
     var result []Beer
 
